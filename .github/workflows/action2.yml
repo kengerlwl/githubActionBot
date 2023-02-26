@@ -34,6 +34,7 @@ jobs:
           echo "curent dir is"
           pwd
           ls -al
+          bash ./test.sh
           bash ./files/test.sh
           ls
           echo "curent dir is"
