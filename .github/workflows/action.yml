@@ -30,6 +30,7 @@ jobs:
         run:
           echo $var and ${secretVar}
 
+      # 切换到github目录下面
       - name: 'Checkout codes'
         uses: actions/checkout@v1
 

@@ -32,16 +32,16 @@ jobs:
 
       - name: 'Checkout codes'
         uses: actions/checkout@v1
-      - name: 'path test'
-        run: bash ./test.sh
-      - run: |
+        
+      - name: 'path1'
+        run: |
           echo "curent dir is"
           pwd
-          ls -al
-          bash ./test.sh
-          bash ./files/test.sh
-          ls
+          cd files
           echo "curent dir is"
           pwd
+        
+      - name: 'path2'
+        run: pwd
 
 
