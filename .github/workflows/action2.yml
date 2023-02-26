@@ -33,7 +33,8 @@ jobs:
         run: |
           echo "curent dir is"
           pwd
-          cd .files
+          ls
+          cd files
           ls
           echo "curent dir is"
           pwd
