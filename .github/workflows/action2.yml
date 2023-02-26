@@ -30,19 +30,18 @@ jobs:
         run:
           echo $var and ${secretVar}
 
-          # 执行脚本
-      - name: 'runBash'
+      - name: 'Checkout codes'
+        uses: actions/checkout@v1
+      - name: 'path test'
         run: bash ./test.sh
-      # - name: 'path test'
-      #   run: bash ./test.sh
-      # - run: |
-      #     echo "curent dir is"
-      #     pwd
-      #     ls -al
-      #     bash ./test.sh
-      #     bash ./files/test.sh
-      #     ls
-      #     echo "curent dir is"
-      #     pwd
+      - run: |
+          echo "curent dir is"
+          pwd
+          ls -al
+          bash ./test.sh
+          bash ./files/test.sh
+          ls
+          echo "curent dir is"
+          pwd
 
 
