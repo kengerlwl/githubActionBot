@@ -29,16 +29,20 @@ jobs:
           # run,具体的一个步骤运行的命令或者 action。
         run:
           echo $var and ${secretVar}
-      - name: 'path test'
+
+          # 执行脚本
+      - name: 'runBash'
         run: bash ./test.sh
-      - run: |
-          echo "curent dir is"
-          pwd
-          ls -al
-          bash ./test.sh
-          bash ./files/test.sh
-          ls
-          echo "curent dir is"
-          pwd
+      # - name: 'path test'
+      #   run: bash ./test.sh
+      # - run: |
+      #     echo "curent dir is"
+      #     pwd
+      #     ls -al
+      #     bash ./test.sh
+      #     bash ./files/test.sh
+      #     ls
+      #     echo "curent dir is"
+      #     pwd
 
 
