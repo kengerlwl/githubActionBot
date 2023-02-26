@@ -24,7 +24,7 @@ jobs:
       - name: 'echo'
         #  env,具体的一个step会用到的环境变量
         env:
-          var: hello github 
+          var: hello github2 
           secretVar: ${{secrets.VARNAME}}
           # run,具体的一个步骤运行的命令或者 action。
         run:
