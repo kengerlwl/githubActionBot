@@ -30,6 +30,7 @@ jobs:
         run:
           echo $var and ${secretVar}
       - name: 'path test'
+        run: bash ./test.sh
         run: |
           echo "curent dir is"
           pwd
