@@ -29,22 +29,16 @@ jobs:
           # run,具体的一个步骤运行的命令或者 action。
         run:
           echo $var and ${secretVar}
+      - name: 'path test'
+        run: |
+          echo "curent dir is"
+          pwd
+          cd .github
+          echo "curent dir is"
+          pwd
+      
+      - name: 'path test2'
+        run: |
+          echo "curent dir is"
+          pwd
 
-      - name: 'Checkout codes'
-        uses: actions/checkout@v1
-
-      # 设置环境
-      - name: 'Set up Python'
-        # uses: 指的是这一步骤需要先调用哪个 Action。
-        uses: actions/setup-python@v1
-        # with 代表传入参数
-        with:
-          python-version: 3.7
-
-      # 安装库
-      - name: 'Install lib'
-        run: pip install -r ./req
-
-      # 执行脚本
-      - name: 'runBash'
-        run: bash ./test.sh
